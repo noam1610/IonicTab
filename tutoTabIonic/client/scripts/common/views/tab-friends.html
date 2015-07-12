@@ -1,0 +1,13 @@
+<ion-view title="Friends">
+    <ion-content class="padding">
+        <h1>Friends</h1>
+
+        <ion-list>
+            <ion-item ui-sref="tab.friends-id({id: 2})" ng-repeat="friend in vm.friends" class="item item-icon-right">
+                <span ng-class="{done: friend.done}">{{friend.name}}</span>
+            </ion-item>
+
+        </ion-list>
+
+    </ion-content>
+</ion-view>
